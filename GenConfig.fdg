@@ -29,8 +29,8 @@
       "Java": false
     },
     "Docker": {
-      "Dockerfile": true,
-      "DockerfileAutobuild": true,
+      "Dockerfile": false,
+      "DockerfileAutobuild": false,
       "DockerBuildShellScript": false,
       "DockerSwarm": false
     },
@@ -51,7 +51,7 @@
       },
       "ClickHouse": {
         "DiffSql": false,
-        "FullSql": true,
+        "FullSql": false,
         "ConnectionString": null
       },
       "Oracle": {
@@ -66,12 +66,12 @@
       }
     },
     "Docs": {
-      "Csv": true,
-      "Wmf": true
+      "Csv": false,
+      "Wmf": false
     },
     "Metadata": {
-      "Crp": true,
-      "Json": true
+      "Crp": false,
+      "Json": false
     }
   }
 }
