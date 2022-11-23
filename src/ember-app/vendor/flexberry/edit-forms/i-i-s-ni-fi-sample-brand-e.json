@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Brand",
+  "name": "IISNiFiSampleBrandE",
+  "className": "BrandE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ni-fi-sample-brand",
+      "modelProjection": "BrandE"
+    }
+  ]
+}

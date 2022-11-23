@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-ni-fi-sample-car-e",
+  "editForm": "i-i-s-ni-fi-sample-car-e",
+  "external": false,
+  "caption": "Car",
+  "name": "IISNiFiSampleCarL",
+  "className": "CarL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ni-fi-sample-car",
+      "modelProjection": "CarL"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Apache NiFi Sample",
+  "applicationTitle": "Apache NiFi Sample",
+  "items": [
+    {
+      "link": null,
+      "menuName": "ni-fi-sample",
+      "caption": "NiFiSample",
+      "title": "NiFiSample",
+      "children": [
+        {
+          "link": "i-i-s-ni-fi-sample-brand-l",
+          "menuName": null,
+          "caption": "Brand",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ni-fi-sample-car-l",
+          "menuName": null,
+          "caption": "Car",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ni-fi-sample-producing-country-l",
+          "menuName": null,
+          "caption": "Producing country",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

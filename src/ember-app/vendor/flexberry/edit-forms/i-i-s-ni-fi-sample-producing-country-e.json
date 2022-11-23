@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Producing country",
+  "name": "IISNiFiSampleProducingCountryE",
+  "className": "ProducingCountryE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ni-fi-sample-producing-country",
+      "modelProjection": "ProducingCountryE"
+    }
+  ]
+}

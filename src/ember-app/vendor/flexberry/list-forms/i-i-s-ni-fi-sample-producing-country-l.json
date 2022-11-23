@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-ni-fi-sample-producing-country-e",
+  "editForm": "i-i-s-ni-fi-sample-producing-country-e",
+  "external": false,
+  "caption": "Producing country",
+  "name": "IISNiFiSampleProducingCountryL",
+  "className": "ProducingCountryL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ni-fi-sample-producing-country",
+      "modelProjection": "ProducingCountryL"
+    }
+  ]
+}

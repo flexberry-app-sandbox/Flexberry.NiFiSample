@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-ni-fi-sample-brand-e",
+  "editForm": "i-i-s-ni-fi-sample-brand-e",
+  "external": false,
+  "caption": "Brand",
+  "name": "IISNiFiSampleBrandL",
+  "className": "BrandL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ni-fi-sample-brand",
+      "modelProjection": "BrandL"
+    }
+  ]
+}
