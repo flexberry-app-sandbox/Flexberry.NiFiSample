@@ -1,0 +1,17 @@
+﻿version: '3'
+
+services:
+  app:
+    image: nifisample/app
+    links:
+      - app-postgre-db:app-postgre-db
+    ports:
+      - 80:80
+
+  app-postgre-db:
+    image: nifisample/postgre-sql
+    volumes:
+      - NiFiSamplePostgreDb:/var/lib/pgsql/data/
+
+volumes:
+  NiFiSamplePostgreDb:
