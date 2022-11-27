@@ -51,7 +51,7 @@
       },
       "ClickHouse": {
         "DiffSql": false,
-        "FullSql": false,
+        "FullSql": true,
         "ConnectionString": null
       },
       "Oracle": {

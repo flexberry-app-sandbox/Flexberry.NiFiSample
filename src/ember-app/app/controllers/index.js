@@ -22,19 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-ni-fi-sample-brand-l',
             caption: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-brand-l.caption'),
             title: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-brand-l.title'),
-            icon: 'paperclip',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-ni-fi-sample-car-l',
             caption: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-car-l.caption'),
             title: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-car-l.title'),
-            icon: 'table',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-ni-fi-sample-producing-country-l',
             caption: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-producing-country-l.caption'),
             title: i18n.t('forms.application.sitemap.ni-fi-sample.i-i-s-ni-fi-sample-producing-country-l.title'),
-            icon: 'archive',
+            icon: 'paperclip',
             children: null
           }]
         }
