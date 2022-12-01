@@ -13,10 +13,17 @@ services:
     volumes:
       - NiFiSamplePostgreDb:/var/lib/pgsql/data/
 
+  clickhouse-db:
+    image: nifisample/clickhouse
+    command: gosu clickhouse:clickhouse sh -c ' while :; do /usr/bin/clickhouse-server --config-file=/etc/clickhouse-server/config.xml; sleep 1; done'
+    volumes:
+      - NiFiSampleClickHouseDb:/var/lib/clickhouse
+
   apache-nifi:
     image: apache/nifi
     ports:
       - 8443:8443
 
 volumes:
+  NiFiSampleClickHouseDb:
   NiFiSamplePostgreDb:
