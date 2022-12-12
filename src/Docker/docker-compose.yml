@@ -1,0 +1,29 @@
+﻿version: '3'
+
+services:
+  app:
+    image: nifisample/app
+    links:
+      - app-postgre-db:app-postgre-db
+    ports:
+      - 80:80
+
+  app-postgre-db:
+    image: nifisample/postgre-sql
+    volumes:
+      - NiFiSamplePostgreDb:/var/lib/pgsql/data/
+
+  clickhouse-db:
+    image: nifisample/clickhouse
+    command: gosu clickhouse:clickhouse sh -c ' while :; do /usr/bin/clickhouse-server --config-file=/etc/clickhouse-server/config.xml; sleep 1; done'
+    volumes:
+      - NiFiSampleClickHouseDb:/var/lib/clickhouse
+
+  apache-nifi:
+    image: apache/nifi
+    ports:
+      - 8443:8443
+
+volumes:
+  NiFiSampleClickHouseDb:
+  NiFiSamplePostgreDb:
