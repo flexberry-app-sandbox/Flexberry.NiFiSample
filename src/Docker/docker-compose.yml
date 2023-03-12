@@ -12,6 +12,10 @@ services:
     image: nifisample/postgre-sql
     volumes:
       - NiFiSamplePostgreDb:/var/lib/pgsql/data/
+    ports:
+      - 5432:5432
+    networks:
+      - nifisample
 
   clickhouse-db:
     image: nifisample/clickhouse
@@ -27,3 +31,6 @@ services:
 volumes:
   NiFiSampleClickHouseDb:
   NiFiSamplePostgreDb:
+
+networks:
+  nifisample:
