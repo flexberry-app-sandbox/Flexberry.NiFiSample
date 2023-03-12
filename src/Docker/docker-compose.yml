@@ -3,10 +3,12 @@
 services:
   app:
     image: nifisample/app
-    links:
-      - app-postgre-db:app-postgre-db
     ports:
       - 80:80
+    depends_on:
+      - app-postgre-db
+    networks:
+      - nifisample
 
   app-postgre-db:
     image: nifisample/postgre-sql
