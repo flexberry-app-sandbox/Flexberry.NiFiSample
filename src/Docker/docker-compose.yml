@@ -24,6 +24,11 @@ services:
     command: gosu clickhouse:clickhouse sh -c ' while :; do /usr/bin/clickhouse-server --config-file=/etc/clickhouse-server/config.xml; sleep 1; done'
     volumes:
       - NiFiSampleClickHouseDb:/var/lib/clickhouse
+    ports:
+      - 8123:8123
+      - 9000:9000
+    networks:
+      - nifisample
 
   apache-nifi:
     image: apache/nifi
