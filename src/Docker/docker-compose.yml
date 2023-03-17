@@ -30,10 +30,20 @@ services:
     networks:
       - nifisample
 
-  apache-nifi:
-    image: apache/nifi
+  nifi:
+    image: nifisample/nifi
     ports:
       - 8443:8443
+    environment:
+      # 4 characters min
+      SINGLE_USER_CREDENTIALS_USERNAME: flexberryuser
+      # 12 characters min
+      SINGLE_USER_CREDENTIALS_PASSWORD: jhvjhvjhvjhv
+    depends_on:
+      - app-postgre-db
+      - clickhouse-db
+    networks:
+      - nifisample
 
 volumes:
   NiFiSampleClickHouseDb:
