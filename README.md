@@ -18,7 +18,7 @@
 
 3. В запущенном из образа nifisample/nifi контейнере выполнить команду для создания таблицы
 ```
-clickhouse-client --host audit-db --user default --password P@ssw0rd --multiquery < /var/clickhouse/schema/CreateAuditTables.sql
+clickhouse-client --host clickhouse-db --user default --password P@ssw0rd --multiquery < /var/clickhouse/schema/ClickHouseDirectGenerator.create.sql
 ```
 
 Теперь все запущено
