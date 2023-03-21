@@ -1,8 +1,8 @@
 {
   "ProjectId": "bf8970c1-865e-4b1c-934f-687b7422514e",
-  "CrpLocalPath": "model.crp",
+  "CrpLocalPath": null,
   "JsonMetadataPath": null,
-  "OnlineCrpUrl": "null",
+  "OnlineCrpUrl": "https://designer.flexberry.net",
   "OneShotToken": null,
   "GenPath": "src",
   "BeforeGenScriptPath": null,
@@ -24,7 +24,7 @@
       }
     },
     "Backend": {
-      "AspNet": false,
+      "AspNet": true,
       "AspNetCore": true,
       "Java": false
     },

@@ -6,4 +6,4 @@ USER root
 
 RUN \
   chown -R nifi /opt/jdbc/ && \
-  chmod 777 /opt/jdbc/postgresql-42.5.4.jar /opt/jdbc/clickhouse-jdbc-0.4.1.jar;
+  chmod 777 /opt/jdbc/postgresql-42.5.4.jar /opt/jdbc/clickhouse-jdbc-0.4.1-shaded.jar;
