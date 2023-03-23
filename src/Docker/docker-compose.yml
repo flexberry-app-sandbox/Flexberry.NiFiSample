@@ -1,0 +1,30 @@
+﻿version: '3'
+
+services:
+  app:
+    image: nifisample/app
+    links:
+      - app-postgre-db:app-postgre-db
+    ports:
+      - 80:80
+    environment:
+      - UploadUrl=Uploads
+      - BackendRoot=https://localhost
+      - DefConnStr=SERVER=app-postgre-db;User ID=flexberryuser;Password=jhv;Port=5432;database=appdb;
+    networks:
+      - nifisample
+
+  app-postgre-db:
+    image: nifisample/postgre-sql
+    volumes:
+      - NiFiSamplePostgreDb:/var/lib/pgsql/data/
+    ports:
+      - 5432:5432
+    networks:
+      - nifisample
+
+volumes:
+  NiFiSamplePostgreDb:
+
+networks:
+  nifisample:
